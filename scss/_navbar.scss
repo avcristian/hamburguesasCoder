@@ -1,12 +1,22 @@
 @import "variables";
-h1{
-    font-weight: 800;
-    font-size: 2.4rem;
-}
+
 
 .nav-link{
+    font-family: $font-famili;
     font-weight: 600;
+    color: #1f1f1f;
+    &:hover{
+        color: #2d2d2d;
+    }
 }
+
+.navbar-toggler{
+    border-color: #1f1f1f;
+    &:hover{
+        background-color: $second-color;
+    }
+}
+
 
 .navar{
     background-color: $primary-color;
@@ -16,7 +26,7 @@ h1{
     justify-content: flex-end;
 }
 .contenedorLogo{
-    height: 5vh;
+    height: 5.5vh;
 }
 .logo{
     height: 100%;
