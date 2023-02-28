@@ -17,6 +17,8 @@
 }
 .nav-link:hover {
   color: #2d2d2d;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 .navbar-toggler {
