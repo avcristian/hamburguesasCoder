@@ -34,3 +34,9 @@
 .logo{
     height: 100%;
 }
+
+@media (min-width: 768px){
+    .contenedorLogo{
+        height: 8vh;
+    }
+}
