@@ -40,15 +40,16 @@ i {
 
 .conTitulo {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
+}
+
+.titulo {
+  font-size: 2em;
+  margin-left: 10px;
 }
 
 .logo {
-  height: 5.5vh;
-  vertical-align: text-bottom;
+  width: 4vh;
 }
 
 @media (min-width: 768px) {
