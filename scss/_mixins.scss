@@ -1,0 +1,12 @@
+
+@mixin display-flex($display, $wrap: nowrap, $jusitfy, $align, $direction: column){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $jusitfy;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin parrafo(){
+    text-align: justify;
+}
