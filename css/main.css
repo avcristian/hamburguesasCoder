@@ -48,7 +48,7 @@ i {
 
 .logo {
   height: 5.5vh;
-  vertical-align: text-bottom;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
