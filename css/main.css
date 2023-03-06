@@ -40,15 +40,21 @@ i {
 
 .conTitulo {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
+}
+
+.titulo {
+  font-size: 2em;
+  margin-left: 10px;
 }
 
 .logo {
+<<<<<<< HEAD
   height: 5.5vh;
   align-items: center;
+=======
+  width: 4vh;
+>>>>>>> 0d67cea6f078a032e534a6c4a15a4988e7f93ba6
 }
 
 @media (min-width: 768px) {

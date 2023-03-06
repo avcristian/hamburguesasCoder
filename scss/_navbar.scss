@@ -28,15 +28,17 @@
     align-items: center;
 }
 .conTitulo{
-    @include display-flex(flex, nowrap, center, center, row)
-
+    display: flex;
+    align-items: flex-start;
+}
+.titulo{
+    font-size: 2em;
+    margin-left: 10px;
 }
 
 
 .logo{
-    height: 5.5vh;
-    vertical-align: text-bottom;  
-
+    width: 4vh;
 }
 
 @media (min-width: 768px){
