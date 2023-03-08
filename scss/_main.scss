@@ -3,7 +3,7 @@
     @include display-flex(flex, nowrap, space-evenly, center, column);
     height: 29vh;
     color: #ddd;
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.526),rgba(0, 0, 0, 0.819)), url("/assets/img/burgerbanner.jpg");
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.526),rgba(0, 0, 0, 0.819)), url("../assets/img/burgerbanner.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -14,4 +14,4 @@
 .section .section__p{
     @include parrafo();
     padding: 10px;
-}
+} 

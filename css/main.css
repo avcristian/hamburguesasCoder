@@ -29,7 +29,7 @@ i {
 }
 
 .navar {
-  background-color: #ff9600;
+  background-color: #f48c06;
 }
 
 .navFlex {
@@ -49,12 +49,7 @@ i {
 }
 
 .logo {
-<<<<<<< HEAD
-  height: 5.5vh;
-  align-items: center;
-=======
   width: 4vh;
->>>>>>> 0d67cea6f078a032e534a6c4a15a4988e7f93ba6
 }
 
 @media (min-width: 768px) {
@@ -70,7 +65,7 @@ i {
   flex-direction: column;
   height: 29vh;
   color: #ddd;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.526), rgba(0, 0, 0, 0.819)), url("/assets/img/burgerbanner.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.526), rgba(0, 0, 0, 0.819)), url("../assets/img/burgerbanner.jpg");
   background-size: cover;
   background-position: center;
 }
