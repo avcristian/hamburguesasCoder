@@ -1,0 +1,21 @@
+{
+  "name": "proyectocoderfrany",
+  "version": "1.0.0",
+  "description": "Proyecto, curso desarrollo web, frany burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avcristian/hamburguesasCoder.git"
+  },
+  "author": "Crstian Aviles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avcristian/hamburguesasCoder/issues"
+  },
+  "homepage": "https://github.com/avcristian/hamburguesasCoder#readme"
+}

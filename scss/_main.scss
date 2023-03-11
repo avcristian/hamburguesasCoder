@@ -1,4 +1,8 @@
 @import 'mixins';
+
+.main{
+    height: 80vh;
+}
 .main .section__img{
     @include display-flex(flex, nowrap, space-evenly, center, column);
     height: 29vh;

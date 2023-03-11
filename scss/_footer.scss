@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+.footer{
+    background-color: $primary-color;
+}
+
+.footer__flex{
+    @include display-flex(flex, nowrap, space-evenly, center, row);
+}
+
+.footer__flex__logo{
+    @include  display-flex(flex, wrap, center, center, column);
+    text-decoration: none;
+    padding-top: 10px;
+    width: 22vw;
+}
+
+.footer__flex__logo h3{
+    color: #111;
+    text-align: center;
+}
+
+.footer__flex__contacto{
+    width: 35vw;
+}
