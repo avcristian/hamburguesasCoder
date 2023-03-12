@@ -1,4 +1,15 @@
 
 $primary-color : #f48c06;
 $second-color: #d97f00;
+$color-txt-w: #ddd;
+$color-txt-b: #1f1f1f;
+$color-txt-b-hover: #2d2d2d;
+$borde: #1f1f1f;
 
+$colores:(
+    naranja : $primary-color,
+    texto-blanco: $color-txt-w,
+    texto-negro: $color-txt-b,
+    texto-negro-h: $color-txt-b-hover,
+    borde: $borde,
+);

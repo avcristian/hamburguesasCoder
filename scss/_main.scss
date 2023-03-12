@@ -1,21 +1,95 @@
 @import 'mixins';
+@import 'variables';
 
-.main{
-    height: 80vh;
-}
 .main .section__img{
     @include display-flex(flex, nowrap, space-evenly, center, column);
     height: 20vh;
-    color: #ddd;
+    color: map-get($colores, texto-blanco );
     background:linear-gradient(to right,rgba(0, 0, 0, 0.526),rgba(0, 0, 0, 0.819)), url("../assets/img/burgerbanner.jpg");
     background-size: cover;
     background-position: center;
+    & .section__h2{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.5em
+    }
+    & .section__p{
+        @include parrafo();
+        padding: 10px;
+    }
 }
-.section .section__h2{
+
+.section__take{
+    @include display-flex(flex, nowrap, space-evenly, center, column);
+    background: linear-gradient(to right,rgba(27, 27, 27, 0.4),rgba(36, 36, 36, 0.819)), url("../assets/img/section_takeaway.jpg");
+    color: map-get($colores, texto-blanco );
+    height: 25vh;
+    .take__h2{
+        font-size: 2.1em;
+    }
+    .take__container{
+        @include display-flex(flex, nowrap, space-evenly, center, row);
+        .imgPeya{
+            height: 100%;
+            border-radius: 17px;
+        }
+        .container__img{
+            height: 6vh;
+        }
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include boton(90%);
+    }
+}
+.section__mapa{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    background: linear-gradient(to right,rgba(27, 27, 27, 0.4),rgba(36, 36, 36, 0.819)), url("../assets/img/fondo.png");
+    background-position: center;
+    h2{
+        color: map-get($colores, texto-blanco );
+        text-align: center;
+        padding-top: 15px;
+    }
 }
-.section .section__p{
-    @include parrafo();
-    padding: 10px;
-} 
+.mapa__card{
+    color: map-get($colores, texto-blanco );
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px 15px 30px;
+    & h3{
+        font-size: 1.6em;
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include boton(100%);
+        
+    }
+}
+
+@media (min-width: 768px){
+    .section__mapa{
+        height: 35vh;
+    }
+    .main .section__img{
+        height: 23vh;
+    }
+    .section__take{
+        .boton{
+        @include boton(30%);
+        }
+    }
+}
+
+
+
+
+

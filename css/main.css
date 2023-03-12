@@ -25,7 +25,7 @@ i {
   border-color: #1f1f1f;
 }
 .navbar-toggler:hover {
-  background-color: #d97f00;
+  background-color: #f48c06;
 }
 
 .navar {
@@ -38,9 +38,10 @@ i {
   align-items: center;
 }
 
+/* Para poder centrar bien el titulo saque los margin top que venian por defecto en boostrap, modificnaod el minificado que tengo linkeado */
 .conTitulo {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .titulo {
@@ -49,7 +50,7 @@ i {
 }
 
 .logo {
-  width: 4vh;
+  width: 4.5vh;
 }
 
 @media (min-width: 768px) {
@@ -57,10 +58,6 @@ i {
     height: 8vh;
   }
 }
-.main {
-  height: 80vh;
-}
-
 .main .section__img {
   display: flex;
   flex-wrap: nowrap;
@@ -73,17 +70,125 @@ i {
   background-size: cover;
   background-position: center;
 }
-
-.section .section__h2 {
+.main .section__img .section__h2 {
   display: flex;
   justify-content: space-evenly;
+  font-size: 2.5em;
 }
-
-.section .section__p {
+.main .section__img .section__p {
   text-align: justify;
   padding: 10px;
 }
 
+.section__take {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba(27, 27, 27, 0.4), rgba(36, 36, 36, 0.819)), url("../assets/img/section_takeaway.jpg");
+  color: #ddd;
+  height: 25vh;
+}
+.section__take .take__h2 {
+  font-size: 2.1em;
+}
+.section__take .take__container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.section__take .take__container .imgPeya {
+  height: 100%;
+  border-radius: 17px;
+}
+.section__take .take__container .container__img {
+  height: 6vh;
+}
+.section__take .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f48c06;
+  border-radius: 8px;
+  text-align: center;
+  height: 4.5vh;
+  width: 90%;
+  align-self: center;
+}
+.section__take .boton a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #1f1f1f;
+}
+
+.section__mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  background: linear-gradient(to right, rgba(27, 27, 27, 0.4), rgba(36, 36, 36, 0.819)), url("../assets/img/fondo.png");
+  background-position: center;
+}
+.section__mapa h2 {
+  color: #ddd;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.mapa__card {
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 30px 15px 30px;
+}
+.mapa__card h3 {
+  font-size: 1.6em;
+}
+.mapa__card .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f48c06;
+  border-radius: 8px;
+  text-align: center;
+  height: 4.5vh;
+  width: 100%;
+  align-self: center;
+}
+.mapa__card .boton a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #1f1f1f;
+}
+
+@media (min-width: 768px) {
+  .section__mapa {
+    height: 35vh;
+  }
+  .main .section__img {
+    height: 23vh;
+  }
+  .section__take .boton {
+    background-color: #f48c06;
+    border-radius: 8px;
+    text-align: center;
+    height: 4.5vh;
+    width: 30%;
+    align-self: center;
+  }
+  .section__take .boton a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #1f1f1f;
+  }
+}
 .footer {
   background-color: #f48c06;
 }
@@ -104,6 +209,7 @@ i {
   flex-direction: column;
   text-decoration: none;
   padding-top: 10px;
+  padding-bottom: 10px;
   width: 22vw;
 }
 
@@ -114,6 +220,21 @@ i {
 
 .footer__flex__contacto {
   width: 35vw;
+}
+
+.icono__ig {
+  color: #e1306c;
+  font-size: 1.5em;
+}
+
+.icono__fb {
+  color: #3b5998;
+  font-size: 1.5em;
+}
+
+.icono__tw {
+  color: #00acee;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,6 +12,7 @@
     @include  display-flex(flex, wrap, center, center, column);
     text-decoration: none;
     padding-top: 10px;
+    padding-bottom: 10px;
     width: 22vw;
 }
 
@@ -22,4 +23,17 @@
 
 .footer__flex__contacto{
     width: 35vw;
+}
+
+.icono__ig{
+    color: #e1306c;
+    font-size: 1.5em;
+}
+.icono__fb{
+    color: #3b5998;
+    font-size: 1.5em;
+}
+.icono__tw{
+    color: #00acee;
+    font-size: 1.5em;
 }

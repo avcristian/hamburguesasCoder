@@ -4,32 +4,33 @@
 .nav-link{
     font-family: $font-famili;
     font-weight: 600;
-    color: #1f1f1f;
+    color: map-get($colores, texto-negro);
     &:hover{
-        color: #2d2d2d;
+        color: map-get($colores, texto-negro-h);
     }
 }
 
 .navbar-toggler{
-    border-color: #1f1f1f;
+    border-color: map-get($colores, borde);
     &:hover{
-        background-color: $second-color;
+        background-color: map-get($colores, naranja);
     }
 }
 
 
 
 .navar{
-    background-color: $primary-color;
+    background-color: map-get($colores, naranja);
 }
 .navFlex{
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
+/* Para poder centrar bien el titulo saque los margin top que venian por defecto en boostrap, modificnaod el minificado que tengo linkeado */
 .conTitulo{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 .titulo{
     font-size: 2em;
@@ -38,7 +39,7 @@
 
 
 .logo{
-    width: 4vh;
+    width: 4.5vh;
 }
 
 @media (min-width: 768px){
