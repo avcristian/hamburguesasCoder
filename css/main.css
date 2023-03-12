@@ -67,7 +67,7 @@ i {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 29vh;
+  height: 20vh;
   color: #ddd;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.526), rgba(0, 0, 0, 0.819)), url("../assets/img/burgerbanner.jpg");
   background-size: cover;
