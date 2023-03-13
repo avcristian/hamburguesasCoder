@@ -111,23 +111,30 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f48c06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa62a;
   border-radius: 8px;
   text-align: center;
   height: 4.5vh;
   width: 90%;
   align-self: center;
+  transition: 0.5s;
 }
 .section__take .boton a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
   color: #1f1f1f;
 }
 .section__take .boton p {
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
   color: #1f1f1f;
+}
+.section__take .boton:hover {
+  background-color: #f48c06;
 }
 
 .section__mapa {
@@ -158,23 +165,30 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f48c06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa62a;
   border-radius: 8px;
   text-align: center;
   height: 4.5vh;
   width: 100%;
   align-self: center;
+  transition: 0.5s;
 }
 .mapa__card .boton a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
   color: #1f1f1f;
 }
 .mapa__card .boton p {
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
   color: #1f1f1f;
+}
+.mapa__card .boton:hover {
+  background-color: #f48c06;
 }
 
 .productos .productos__titulo {
@@ -204,30 +218,42 @@ i {
 }
 .productos .row .productos__card .card__img {
   width: 100%;
+  overflow: hidden;
 }
 .productos .row .productos__card .card__img img {
   width: 100%;
   height: 32vh;
   object-fit: cover;
+  transition: 0.5s;
+}
+.productos .row .productos__card .card__img img:hover {
+  transform: scale(1.2);
 }
 .productos .row .productos__card .boton {
-  background-color: #f48c06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa62a;
   border-radius: 8px;
   text-align: center;
   height: 4.5vh;
   width: 100%;
   align-self: center;
+  transition: 0.5s;
 }
 .productos .row .productos__card .boton a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
   color: #1f1f1f;
 }
 .productos .row .productos__card .boton p {
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 1.3em;
   color: #1f1f1f;
+}
+.productos .row .productos__card .boton:hover {
+  background-color: #f48c06;
 }
 .productos .row .productos__card .card__mini {
   width: 100%;
@@ -246,25 +272,90 @@ i {
     height: 23vh;
   }
   .section__take .boton {
-    background-color: #f48c06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa62a;
     border-radius: 8px;
     text-align: center;
     height: 4.5vh;
     width: 30%;
     align-self: center;
+    transition: 0.5s;
   }
   .section__take .boton a {
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.3em;
     color: #1f1f1f;
   }
   .section__take .boton p {
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.3em;
     color: #1f1f1f;
   }
+  .section__take .boton:hover {
+    background-color: #f48c06;
+  }
 }
+textarea {
+  resize: none;
+}
+
+.formulario__titulo {
+  color: #ddd;
+}
+.formulario__titulo h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+.fondo_contacto {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.526), rgba(0, 0, 0, 0.819)), url("../assets/img/fondo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 72vh;
+  color: #ddd;
+}
+
+.icono__wp {
+  color: #25D366;
+  font-size: 1.5em;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa62a;
+  border-radius: 8px;
+  text-align: center;
+  height: 4.5vh;
+  width: 100%;
+  align-self: center;
+  transition: 0.5s;
+}
+.boton a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #1f1f1f;
+}
+.boton p {
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #1f1f1f;
+}
+.boton:hover {
+  background-color: #f48c06;
+}
+
 .footer {
   background-color: #f48c06;
 }

@@ -1,0 +1,32 @@
+@import 'mixins';
+@import 'variables';
+
+textarea{
+    resize: none;
+}
+.formulario__titulo{
+    color: map-get($colores, texto-blanco);
+    h2{
+        font-size: 1.7em;
+        font-weight: 600;
+    }
+}
+.fondo_contacto{
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.526),rgba(0, 0, 0, 0.819)), url("../assets/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 72vh;
+    color: map-get($colores, texto-blanco);
+}
+.icono__wp{
+    color: #25D366;
+    font-size: 1.5em
+}
+.boton{
+    @include boton(100%);
+}

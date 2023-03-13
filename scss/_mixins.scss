@@ -12,21 +12,28 @@
 }
 
 @mixin boton($ancho){
-    background-color: map-get($colores, naranja );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colores, naranja-claro );
     border-radius: 8px;
     text-align: center;
     height: 4.5vh;
     width: $ancho;
     align-self: center;
+    transition: 0.5s;
     a{
         text-decoration: none;
-        font-weight: 600;
-        font-size: 1.5em;
+        font-weight: 400;
+        font-size: 1.3em;
         color: map-get($colores, texto-negro );
     }
     p{
-        font-weight: 600;
-        font-size: 1.5em;
+        font-weight: 400;
+        font-size: 1.3em;
         color: map-get($colores, texto-negro );
+    }
+    &:hover{
+        background-color: map-get($colores, naranja );
     }
 }

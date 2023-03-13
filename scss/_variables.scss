@@ -1,6 +1,6 @@
 
 $primary-color : #f48c06;
-$second-color: #d97f00;
+$second-color: #ffa62a;
 $color-txt-w: #ddd;
 $color-txt-b: #1f1f1f;
 $color-txt-b-hover: #2d2d2d;
@@ -9,6 +9,7 @@ $fondo-rojo: #fda7a7b7;
 $texto-rojo: #df0000;
 
 $colores:(
+    naranja-claro: $second-color,
     naranja : $primary-color,
     texto-blanco: $color-txt-w,
     texto-negro: $color-txt-b,
