@@ -5,6 +5,8 @@ $color-txt-w: #ddd;
 $color-txt-b: #1f1f1f;
 $color-txt-b-hover: #2d2d2d;
 $borde: #1f1f1f;
+$fondo-rojo: #fda7a7b7;
+$texto-rojo: #df0000;
 
 $colores:(
     naranja : $primary-color,
@@ -12,4 +14,6 @@ $colores:(
     texto-negro: $color-txt-b,
     texto-negro-h: $color-txt-b-hover,
     borde: $borde,
+    fondo-rojo: $fondo-rojo,
+    text-rojo: $texto-rojo
 );

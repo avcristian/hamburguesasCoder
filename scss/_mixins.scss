@@ -24,4 +24,9 @@
         font-size: 1.5em;
         color: map-get($colores, texto-negro );
     }
+    p{
+        font-weight: 600;
+        font-size: 1.5em;
+        color: map-get($colores, texto-negro );
+    }
 }

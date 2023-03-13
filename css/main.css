@@ -124,6 +124,11 @@ i {
   font-size: 1.5em;
   color: #1f1f1f;
 }
+.section__take .boton p {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #1f1f1f;
+}
 
 .section__mapa {
   display: flex;
@@ -166,6 +171,72 @@ i {
   font-size: 1.5em;
   color: #1f1f1f;
 }
+.mapa__card .boton p {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #1f1f1f;
+}
+
+.productos .productos__titulo {
+  background-color: #f48c06;
+  padding: 10px 0;
+}
+.productos .productos__titulo h2 {
+  font-size: 2.1em;
+}
+.productos .productos__titulo h3 {
+  font-weight: 400;
+}
+.productos .row .productos__card {
+  padding-top: 10px;
+}
+.productos .row .productos__card .card__vendida {
+  border-radius: 14px;
+  background-color: rgba(253, 167, 167, 0.7176470588);
+  text-align: center;
+}
+.productos .row .productos__card .card__vendida p {
+  color: #df0000;
+  padding: 5px;
+}
+.productos .row .productos__card h4 {
+  padding: 10px 0;
+}
+.productos .row .productos__card .card__img {
+  width: 100%;
+}
+.productos .row .productos__card .card__img img {
+  width: 100%;
+  height: 32vh;
+  object-fit: cover;
+}
+.productos .row .productos__card .boton {
+  background-color: #f48c06;
+  border-radius: 8px;
+  text-align: center;
+  height: 4.5vh;
+  width: 100%;
+  align-self: center;
+}
+.productos .row .productos__card .boton a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #1f1f1f;
+}
+.productos .row .productos__card .boton p {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #1f1f1f;
+}
+.productos .row .productos__card .card__mini {
+  width: 100%;
+}
+.productos .row .productos__card .card__mini img {
+  width: 100%;
+  height: 18vh;
+  object-fit: contain;
+}
 
 @media (min-width: 768px) {
   .section__mapa {
@@ -184,6 +255,11 @@ i {
   }
   .section__take .boton a {
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #1f1f1f;
+  }
+  .section__take .boton p {
     font-weight: 600;
     font-size: 1.5em;
     color: #1f1f1f;
