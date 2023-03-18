@@ -2,25 +2,25 @@
 @import 'variables';
 
 .main .section__img{
-    @include display-flex(flex, nowrap, space-evenly, center, column);
+    @include display-flex(space-evenly, center, column);
     height: 20vh;
     color: map-get($colores, texto-blanco );
     background:linear-gradient(to right,rgba(0, 0, 0, 0.526),rgba(0, 0, 0, 0.819)), url("../assets/img/burgerbanner.jpg");
     background-size: cover;
     background-position: center;
-    & .section__h2{
+    .section__h2{
         display: flex;
         justify-content: space-evenly;
         font-size: 2.5em
     }
-    & .section__p{
+    .section__p{
         @include parrafo();
         padding: 10px;
     }
 }
 
 .section__take{
-    @include display-flex(flex, nowrap, space-evenly, center, column);
+    @include display-flex(space-evenly, center, column);
     background: linear-gradient(to right,rgba(27, 27, 27, 0.4),rgba(36, 36, 36, 0.819)), url("../assets/img/section_takeaway.jpg");
     color: map-get($colores, texto-blanco );
     height: 25vh;
@@ -28,7 +28,7 @@
         font-size: 2.1em;
     }
     .take__container{
-        @include display-flex(flex, nowrap, space-evenly, center, row);
+        @include display-flex(space-evenly, center, row);
         .imgPeya{
             height: 100%;
             border-radius: 17px;
@@ -38,16 +38,12 @@
         }
     }
     .boton{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(center, center, row);
         @include boton(90%);
     }
 }
 .section__mapa{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include display-flex(space-around, normal, column);
     height: auto;
     background: linear-gradient(to right,rgba(27, 27, 27, 0.4),rgba(36, 36, 36, 0.819)), url("../assets/img/fondo.png");
     background-position: center;
@@ -57,19 +53,17 @@
         padding-top: 15px;
     }
 }
+
 .mapa__card{
     color: map-get($colores, texto-blanco );
-    display: flex;
-    flex-direction: column;
+    @include display-flex(normal, normal, column);
     align-items: flex-start;
     padding: 0 30px 15px 30px;
     & h3{
         font-size: 1.6em;
     }
     .boton{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(center, center, column);
         @include boton(100%);
         
     }

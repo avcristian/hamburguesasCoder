@@ -17,9 +17,7 @@ textarea{
     background-position: center;
 }
 .formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include display-flex(space-evenly, normal, column);
     height: 72vh;
     color: map-get($colores, texto-blanco);
 }

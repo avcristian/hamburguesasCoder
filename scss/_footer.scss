@@ -5,11 +5,11 @@
 }
 
 .footer__flex{
-    @include display-flex(flex, nowrap, space-evenly, center, row);
+    @include display-flex(space-evenly, center, row);
 }
 
 .footer__flex__logo{
-    @include  display-flex(flex, wrap, center, center, column);
+    @include  display-flex(center, center, column);
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;

@@ -1,0 +1,33 @@
+@import "mixins";
+@import "variables";
+
+.notfound{
+    
+    @include display-flex(space-evenly, center, column);
+    height: 83vh;
+    .cont__notfound{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        text-align: justify;
+        font-size: 1.5em;
+        a{
+            color: map-get($colores, naranja);
+            text-decoration: none;
+        }
+        b{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .notfound{
+        .cont__notfound{
+            width: 60%;
+        }
+    }
+}

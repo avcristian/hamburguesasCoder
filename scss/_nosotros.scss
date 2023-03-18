@@ -1,7 +1,6 @@
 .section__nosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include display-flex(space-evenly, normal, column);
+
     color: #ddd;
     .nosotros__h2{
         font-size: 2em;
@@ -20,8 +19,8 @@
 .gente__card{
 
     .card__valor{
-        display: flex;
-        justify-content: space-between;
+        @include display-flex(space-between, normal, column);
+
         h4{
 
         }

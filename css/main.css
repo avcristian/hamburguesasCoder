@@ -78,8 +78,9 @@ textarea {
 
 .formulario {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: column;
   height: 72vh;
   color: #ddd;
 }
@@ -118,8 +119,9 @@ textarea {
 
 .section__nosotros {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: column;
   color: #ddd;
 }
 .section__nosotros .nosotros__h2 {
@@ -138,6 +140,8 @@ textarea {
 .gente__card .card__valor {
   display: flex;
   justify-content: space-between;
+  align-items: normal;
+  flex-direction: column;
 }
 .gente__card .card__img {
   width: 100%;
@@ -177,9 +181,38 @@ textarea {
   height: 100%;
 }
 
+.notfound {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 83vh;
+}
+.notfound .cont__notfound {
+  width: 100%;
+}
+.notfound .cont__notfound img {
+  width: 100%;
+}
+.notfound p {
+  text-align: justify;
+  font-size: 1.5em;
+}
+.notfound p a {
+  color: #f48c06;
+  text-decoration: none;
+}
+.notfound p b {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .notfound .cont__notfound {
+    width: 60%;
+  }
+}
 .main .section__img {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
@@ -201,7 +234,6 @@ textarea {
 
 .section__take {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
@@ -214,7 +246,6 @@ textarea {
 }
 .section__take .take__container {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
@@ -230,6 +261,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,8 +290,9 @@ textarea {
 
 .section__mapa {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  align-items: normal;
+  flex-direction: column;
   height: auto;
   background: linear-gradient(to right, rgba(27, 27, 27, 0.4), rgba(36, 36, 36, 0.819)), url("../assets/img/fondo.png");
   background-position: center;
@@ -273,6 +306,8 @@ textarea {
 .mapa__card {
   color: #ddd;
   display: flex;
+  justify-content: normal;
+  align-items: normal;
   flex-direction: column;
   align-items: flex-start;
   padding: 0 30px 15px 30px;
@@ -284,6 +319,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,7 +459,6 @@ textarea {
 
 .footer__flex {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
@@ -431,7 +466,6 @@ textarea {
 
 .footer__flex__logo {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
